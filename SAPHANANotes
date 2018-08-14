@@ -1,1 +1,2 @@
-In SAP we have Attributes (Simple /Calculated /Local) and Measure (simple/calculated
+In SAP we have Attributes like Dimensions (Simple /Calculated /Local) and Measure are like Facts (simple/calculated
+There are 3 sub types of attributes: Standard [default], Derived and Time
