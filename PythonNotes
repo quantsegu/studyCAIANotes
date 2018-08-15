@@ -1,1 +1,28 @@
+Get max/minimum value's index using argmax / argmin()
+
+
+Converting an date to be the index
+df['Date'] = pd.to_datetime(df['Date'])
+
+Set a different column as index for dataframe
+df.set_index(columnname)
+
+Working with Timeseries data:
+shift is used to shift number of days provided to it as argument.
+df.shift(number of days)
+
+timeshift is used to move the first day's data to end of month or end of year using:
+df.tshift(freq='M/Y') #M/Y/ is used for moving to end of month or year / quarter.
+
+
+Rolling average of data can be calculated:
+df.rolling(window=number of days).mean() #any function can be used based on requirement
+for example std() for standard deviation
+
+plot data with multiple columns
+df[[list of column names]].plot()
+
+
+expanding is used to average/function result of all entries prior to current point
+df['Close'].expanding().mean()
 
