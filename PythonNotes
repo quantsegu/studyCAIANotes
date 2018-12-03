@@ -26,3 +26,14 @@ df[[list of column names]].plot()
 expanding is used to average/function result of all entries prior to current point
 df['Close'].expanding().mean()
 
+
+
+Unlock password:
+Create backup of password-protected excel file.
+Change the file extension to .zip from .xlsx.
+Now extract the whole content of zip file.
+Search for xml format of targeted sheet. You will find it in ‘xl -> worksheets’ directory.
+Open the xml file of targeted sheet in xml editor.
+Now search for ‘sheetProtection’ word in that xml file and remove it.
+Save this edited xml file and replace it with old xml file in zip files.
+Now change the extension from .zip to .xlsx.
